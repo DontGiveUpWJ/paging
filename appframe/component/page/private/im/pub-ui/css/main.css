@@ -1,0 +1,24 @@
+body{-moz-user-select:none;}
+.dialog-body-list{display: none;}
+.text-header{padding-left:0;border-top:none;}
+.font-tool{background:#F3F3F3;border-top:1px solid #E2E2E2;position: relative;z-index:10;height: 26px;line-height: 26px;}
+.tool-list{float: left;position: relative;}
+.tool-list span{cursor:pointer;width:32px;height:26px;display: block;background: url("../../assets/imStyle/editor/themes/default/font-tool.png") no-repeat;}
+.tool-list .family-set{background-position: 11px 7px;}
+.tool-list .size-set{background-position: 10px -19px;}
+.tool-list ul{width:150px;max-height:124px;overflow-x:hidden;overflow-y:auto;padding:2px;display: none;border: 1px solid #A0A0A0;position: absolute;top:26px;left:12px;background: #F3F3F3;box-shadow: 1px 1px 3px #A0A0A0;
+    -moz-box-shadow: 1px 1px 3px #A0A0A0;-webkit-box-shadow: 1px 1px 3px #A0A0A0;filter: progid:DXImageTransform.Microsoft.Shadow(color='#A0A0A0', Direction=135, Strength=3);}
+.tool-list ul li{cursor:pointer;width:136px;padding-left:30px;height:24px;line-height:14px;font-size:12px;}
+.tool-list ul li:hover{border: 1px solid #5690D2;background-color: #E9EFF6;}
+.tool-list ul .this-choose {background: url('../../assets/imStyle/editor/themes/default/font-tool.png') no-repeat 13px -46px;}
+.send-msg-box{display:none;text-align:left;position:absolute;top:-60px;right:18px;border-radius:2px;border:1px solid #f37020;padding:4px 8px;background: #FFF;width:160px;font-size:12px;}
+/*.send-msg-box span{padding-left:20px;background: url("../../assets/imStyle/images/send_msg.png") no-repeat;}*/
+/*.arrow-img{width:16px;height:8px;position: absolute;top:48px;right:23px;background: url("../../assets/imStyle/images/arrow.png") no-repeat;}*/
+
+/*2016.1.6 S*/
+li{list-style: none;}
+.group-list-name{display:none;height:145px;overflow:hidden;overflow-y:auto;border-radius:10px;position: absolute;width:0;right:48px;top:-43px;background: #fff;padding:10px;border:1px solid #94BBFF;}
+.group-list-name li{line-height:30px;border-bottom:1px dashed #94BBFF;color:#FF6600;min-width:120px;max-width:120px;padding:0 6px;overflow:hidden;}
+.group-list-name li:hover{background: #94BBFF;}
+.group-list-name li p{margin:0;}
+.text-header ul{margin-right:0;}

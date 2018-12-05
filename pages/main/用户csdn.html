@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>用户管理</title>
+    <link href="../../pub-ui/css/interface.min.css" rel="stylesheet">
+    <link href="../../pub-ui/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../pub-ui/plugins/artDialog/ui-dialog.css" rel="stylesheet">
+    <link href="../../pub-ui/css/app.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="../../pub-ui/js/ieonly/html5shiv.js"></script>
+        <script src="../../pub-ui/js/ieonly/respond.js"></script>
+        <script src="../../pub-ui/js/ieonly/excanvas.js"></script>
+    <![endif]-->
+</head>
+<body class="bg-graywhite font-sm">
+    <p f="p" class="mgr-big mgl-big text-muted mgt-big mgb-big" id = "show_count">共搜索到 922 条数据</p>
+    <div f="div" class="mgl-big mgr-big mgb-big pdb-lg bg-white pdl-lg pdr-lg with-headbg clearfix">
+        <div class="table-wrap">
+            <table class="table table-hover border-bottom mgb-0" style="border:none;" f="table" name="table" id="table">
+                <thead>
+                    <tr f="tr">
+                        <th f="th" class="text-center"><input class="js_select" type="checkbox" f="checkbox"></th>
+                        <th f="th">ID</th>
+                        <th f="th">用户名</th>
+                        <th f="th">是否可用</th>
+                        <th f="th">密码</th>
+                        <th f="th">操作</th>
+                    </tr>
+                </thead>
+                <tbody id="sList">                  
+                </tbody>
+            </table>
+        </div>
+		
+			
+			 <ul class="ui-page pull-right mgt-big" id = "pageList">
+			</ul>
+         
+</div>
+
+
+
+    </div>
+    <
+</body>
+
+<script src="../../pub-ui/js/jquery-1.11.3.min.js"></script>
+<script src="../../pub-ui/js/interface.min.js"></script>
+<script src="../../pub-ui/plugins/artDialog/dialog-plus.js"></script>
+<script src="../../pub-script/pageWJ/pageWJ.min.js"></script>
+<script src="../../pub-script/showUser.js"></script>
+</html>

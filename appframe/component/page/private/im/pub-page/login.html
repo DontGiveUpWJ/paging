@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,minimum-scale=1.0, maximum-scale=1.0">
+        <title>
+            index
+        </title>
+        <link href="../assets/css/bootstrap.css" rel="stylesheet">
+        <link href="../assets/css/swiper.min.css" rel="stylesheet">
+        <link href="../assets/css/common.css" rel="stylesheet">
+        <link type="text/css" id="privateCss" href="../assets/css/privateStyle.css?v769304" rel="stylesheet">
+         <link rel="stylesheet" href="/nresource/assets/css/component.css" />
+	<link rel="stylesheet" href="/nresource/assets/css/ui-dialog.css" />
+        <!--[if lt IE 9]>
+            <script src="../assets/js/html5shiv.min.js">
+            </script>
+            <script src="../assets/js/respond.min.js">
+            </script>
+        <![endif]-->
+        <script src="../assets/js/jquery.js">
+        </script>
+        <script src="../assets/js/swiper.jquery.min.js">
+        </script>
+        <script src="../assets/js/compatibility.js">
+        </script>
+        <script src="../assets/js/bootstrap.min.js">
+        </script>
+        <script src="../pub-page/login.js">
+        </script>
+         <script src="../assets/js/utils.js">
+        </script>
+        <script src="/appframe/kernel/require.js"></script>
+    </head>
+    
+    <body>
+        <div>
+            <div class="container clearfix pdt-15 pdb-15">
+                <div class="fl">
+                    <a href="#">
+                        <img src="../pub-ui/images/0d9df145132d48f730f6e95bcadb94bb.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pdb-30">
+            <div style="height:501px;background:#f7f1f1 url(http://172.21.2.30/cloud/interface3/static/project/201/chinaUnicomGroupCustomerOnline/demo/pic/537feffc3fd06d3896fe7650f55581ee.png) center top no-repeat;">
+                <div class="container pdt-50">
+                    <div class="row show-grid">
+                        <div class="col-sm-8 col-md-8">
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <div class="bgcolor-1 mgt-10 pdl-30 pdr-30 pdb-20" style="width: 316px; box-shadow: rgb(182, 182, 182) 0px 0px 6px; border-radius: 5px;">
+                                <h4 class="p-color-17 pdt-30">
+                                    用户登录
+                                </h4>
+                                <div class="form-inline">
+                                    <div class="form-group mgt-15" style="width:100%;">
+                                        <div class="input-group" style="width:100%;">
+                                            <div class="input-group-addon pdt-0 pdl-0 pdr-0 pdb-0" style="width:40px;height:40px;border-top-left-radius:0;border-bottom-left-radius:0;">
+                                                <img src="../pub-ui/images/d39ac82bb4bb5f5a5a05e38b00af9c3e.png">
+                                            </div>
+                                            <!--<input type="text" class="form-control" id="exampleInputAmount" placeholder="手机号/会员名/邮箱" style="height:40px;border-top-right-radius:0;border-bottom-right-radius:0;">-->
+                                            <input type="text" class="form-control" id="exampleInputAmount" value="" style="height:40px;border-top-right-radius:0;border-bottom-right-radius:0;">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group mgt-20" style="width:100%;">
+                                        <div class="input-group" style="width:100%;">
+                                            <div class="input-group-addon pdl-0 pdt-0 pdr-0 pdb-0" style="width:40px;height:40px;border-top-left-radius:0;border-bottom-left-radius:0;">
+                                                <img src="../pub-ui/images/49d0be1048b948d6862ddc6ef0b55a45.png">
+                                            </div>
+                                            <!--<input type="password" class="form-control" id="exampleInputAmount1" placeholder="密码"  style="height:40px;border-top-right-radius:0;border-bottom-right-radius:0;">-->
+                                            <input type="password" class="form-control" id="exampleInputAmount1"   style="height:40px;border-top-right-radius:0;border-bottom-right-radius:0;">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group mgt-20" style="width:100%;">
+                                        <div class="input-group" style="width:100%;">
+                                            <div class="input-group-addon pdt-0 pdl-0 pdr-0 pdb-0" style="width:40px;height:40px;border-top-left-radius:0;border-bottom-left-radius:0;">
+                                                <img src="../pub-ui/images/fd0bb3e37188878cf8e7ec80f24fd20c.png">
+                                            </div>
+                                            <input type="text" id="checkCode" name="checkCode" class="form-control" id="exampleInputAmount2" style="height:40px;border-top-right-radius:0;border-bottom-right-radius:0;" placeholder="验证码">
+                                            <div style="display:table-cell;vertical-align: middle;" class="pdl-10">
+                                      <!--           <img src="../pub-ui/images/987f8dae0a231df56f0c3b25042c1e23.png"> -->
+                                                <img id="checkCode_show" alt="点击刷新"  src="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mgt-20" style="width:100%;">
+                                        <button id="login-button" type="submit" class="btn p-bgcolor-6 color-1 fs-18 ued-width-block" style="border-radius: 0px;border:none;">
+                                            登 录
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="clearfix mgt-15">
+                                    <a class="fl p-color-16" href="register.html">
+                                        免费注册
+                                    </a>
+                                    <a class="fr p-color-2" href="resetPassword.html">
+                                        忘记密码
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mgt-50 tc fs-12 p-color-1">
+                <p>
+                    Copyright©1999-2015 中国联通 版权所有
+                </p>
+                <p>
+                    中华人民共和国增值电信业务经营许可证经营许可证编号：A2.B1.B2-20090003
+                </p>
+            </div>
+        </div>
+    </body>
+<script>
+ /*    $(function(){
+        $('#login-button').click(function(){
+            var jid = $('#exampleInputAmount').get(0).value;
+            var password = $('#exampleInputAmount1').get(0).value;
+            localStorage.setItem("jid",jid);
+            localStorage.setItem("password",password);
+            window.location.href="index.html";
+        })
+    }) */
+</script>
+</html>

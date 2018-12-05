@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>clipbord</title>
+    <link href="../css/interface.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <style>
+    .icon-list {
+        margin: 0;
+        padding: 0;
+        margin-right: -40px;
+    }
+    
+    .icon-list li {
+        float: left;
+        width: 90px;
+        margin-right: 25px;
+        text-align: center;
+        list-style: none;
+    }
+    
+    .icon-title {
+        height: 30px;
+        overflow: hidden;
+    }
+    
+    .icon-box {
+        cursor: pointer;
+    }
+    
+    h4 {
+        border-bottom: 1px dashed #ddd;
+        padding: 6px 20px;
+    }
+    .menu-bar{
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <article class="clearfix" style="overflow:hidden;">
+        <div class="menu-bar">
+            <div class="btn-group" id="js_bar">
+              <a href="#icon-list1" type="button" class="btn btn-sm">网页</a>
+              <a href="#icon-list2" type="button" class="btn btn-sm">手势字体</a>
+              <a href="#icon-list3" type="button" class="btn btn-sm">运输</a>
+              <a href="#icon-list4" type="button" class="btn btn-sm">性别</a>
+              <a href="#icon-list5" type="button" class="btn btn-sm">文件类型</a>
+              <a href="#icon-list6" type="button" class="btn btn-sm">表单</a>
+              <a href="#icon-list7" type="button" class="btn btn-sm">图表</a>
+              <a href="#icon-list8" type="button" class="btn btn-sm">文本编辑</a>
+              <a href="#icon-list9" type="button" class="btn btn-sm">指示方向</a>
+              <a href="#icon-list10" type="button" class="btn btn-sm">视频播放</a>
+            </div>
+            <span class="bg-warning font-sm pd-sm pull-right">可按 <strong>Ctrl+F</strong> 搜索</span>
+        </div>
+        <div class="example" id="icon_list">
+            <h4>网页</h4>
+            <ul class="icon-list clearfix" id="icon-list1"></ul>
+            <h4>手势字体</h4>
+            <ul class="icon-list clearfix" id="icon-list2"></ul>
+            <h4>运输</h4>
+            <ul class="icon-list clearfix" id="icon-list3"></ul>
+            <h4>性别</h4>
+            <ul class="icon-list clearfix" id="icon-list4"></ul>
+            <h4>文件类型</h4>
+            <ul class="icon-list clearfix" id="icon-list5"></ul>
+            <h4>表单</h4>
+            <ul class="icon-list clearfix" id="icon-list6"></ul>
+            <h4>图表</h4>
+            <ul class="icon-list clearfix" id="icon-list7"></ul>
+            <h4>文本编辑</h4>
+            <ul class="icon-list clearfix" id="icon-list8"></ul>
+            <h4>指示方向</h4>
+            <ul class="icon-list clearfix" id="icon-list9"></ul>
+            <h4>视频播放</h4>
+            <ul class="icon-list clearfix" id="icon-list10"></ul>
+        </div>
+    </article>
+</body>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="./font.js"></script>
+<script>
+$.each(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"], function(index, val) {
+    var htmls = [];
+    for (var i = 0, l = fontArr[index]['fArr'].length; i < l; i++) {
+        htmls.push('<li>' + '    <div class="media-icon">' + '            <div class="icon-box">' + '                <i class="font-icon font-icon-' + fontArr[index]['fArr'][i] + '"></i>' + '            </div>' + '            <h5 class="icon-title">' + fontArr[index]['fArr'][i] + '</h5>' + '        </div>' + '    </li>');
+    };
+    $("#icon-list" + val).append(htmls.join(''));
+});
+
+var _conf_id = location.hash;
+var _input = parent.$(_conf_id);
+if (self !== parent && _input.length) {
+    $('#icon_list').on('click', '.icon-box', function(event) {
+        event.preventDefault();
+        var _class = $(this).children('i').prop('class');
+        var _res = _class.match(/font\-icon\-([\w\-]+)/i);
+        if (_res && _res[1]) {
+            _input.val(_res[1]).trigger('change');
+            parent.$.ui_dialog.get('conf_open').remove();
+        }
+    });
+}
+
+$('#js_bar').on('click', 'a', function(event) {
+    event.preventDefault();
+    var $this = $(this);
+    var $id = $this.attr('href');
+    var $top = $($id).offset().top;
+    $('html,body').animate({scrollTop: $top - 80}, 300);
+});
+</script>
+
+</html>

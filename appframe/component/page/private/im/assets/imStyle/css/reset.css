@@ -1,0 +1,109 @@
+/**
+ * Filename: mui reset
+ * Description:
+ * Version: 1.0.0
+ * Author: wanggq
+ * UpdateBy: wanggq 20130416
+*/
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #242424;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    font-family: "microsoft yahei", "Droid Sans";
+}
+a {
+    color: #242424;
+    text-decoration: none
+}
+a:hover, a:active {
+    outline: 0
+}
+h1, h2, h3, h4, h5, ul {
+    padding: 0;
+    margin: 0
+}
+h1 {
+    font-size: 20px;
+    line-height: 44px
+}
+h2 {
+    font-size: 18px;
+    line-height: 40px
+}
+h3 {
+    font-size: 16px;
+    line-height: 36px
+}
+h4 {
+    font-size: 14px;
+    line-height: 30px
+}
+h5 {
+    font-size: 12px;
+    line-height: 24px
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+button, input, select, textarea {
+    margin: 0;
+    resize: none;
+    font-size: 100%;
+    vertical-align: middle;
+    line-height: normal
+}
+button:focus, input:focus, select:focus, textarea:focus {
+    outline: 0
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button
+}
+textarea {
+    overflow: auto;
+    vertical-align: top
+}
+address {
+    display: block;
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 20px
+}
+form {
+    margin: 0
+}
+table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0
+}
+table th, table td {
+    padding: 6px;
+    line-height: 20px;
+    vertical-align: top;
+    /* border-top: 1px solid #ddd*/
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block
+}
+audio, canvas, video {
+    display: inline-block
+}
+audio:not([controls]) {
+    display: none
+}
+ul, ul li {
+    list-style: none;
+}

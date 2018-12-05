@@ -1,0 +1,40 @@
+.pages a.curr,.pages a:hover{color:#fff;background-color:#1fbba6;border-bottom:#42ddc8 solid 2px;padding-bottom:0;text-decoration:none;}
+.pages a {
+    color: #666;
+    display: inline-block;
+    font: 12px/24px "Microsoft YaHei";
+    height: 24px;
+    margin: 0 1px;
+    padding: 0 9px 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+a {
+    color: #1a5a94;
+    cursor: pointer;
+    outline: medium none;
+    text-decoration: none;
+}
+body, form, iframe, p, table, caption, ol, dl, ul, li, dl, dd, dt, div, span, a, input, textarea, b, h1, h2, h3, h4, h5, h6, img, label, hr {
+    margin: 0;
+    padding: 0;
+}
+ol, dl, ul, li, dl, dd, dt {
+    list-style: outside none none;
+}
+.pages {
+    text-align: right;
+}
+ol, dl, ul, li, dl, dd, dt {
+    list-style: outside none none;
+}
+body {
+    font-family: Microsoft YaHei;
+    font-size: 12px;
+} 
+.choose_pageing {
+	background-color: #1FBBA6;
+	border-bottom: 2px solid #42DDC8;
+	color: #FFFFFF; 
+	padding-bottom: 0;
+}
